@@ -2,9 +2,9 @@
 
 // Database configuration
 $servername = "localhost";
-$username = "root";
-$password = "";
-$database = "myalbumry";
+$username = "u408770847_quickrate";
+$password = "Agevole@wbp409";
+$database = "u408770847_quickrate";
 
 $conn = new mysqli($servername, $username, $password, $database);
 
