@@ -1,0 +1,5 @@
+{
+    "require": {
+        "phonepe/phonepe-pg-php-sdk": "dev-main"
+    }
+}
