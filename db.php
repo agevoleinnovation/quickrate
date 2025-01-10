@@ -1,5 +1,5 @@
 <?php 
-
+//db.php
 // Database configuration
 $servername = "localhost";
 $username = "u408770847_quickrate";
