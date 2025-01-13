@@ -12,7 +12,7 @@ if (!isset($_SESSION['business_id'])) {
 $business_id = $_SESSION['business_id'];
 
 // Initialize variables
-$businessName = $contact_no = $gstNo = $email = $billingAddress = $pincode = $state = $city = $country = $businessInfo = $logo = $redirectLink = '';
+$username = $businessName = $contact_no = $gstNo = $email = $billingAddress = $pincode = $state = $city = $country = $businessInfo = $logo = $redirectLink = '';
 $socialIcons = [];
 
 // Fetch business information
@@ -23,6 +23,7 @@ $result = $stmt->get_result();
 
 if ($result->num_rows > 0) {
     $row = $result->fetch_assoc();
+    $username = $row['username'] ?? '';
     $businessName = $row['business_name'] ?? '';
     $email = $row['email'] ?? '';
     $contact_no = $row['contact_no'] ?? '';
@@ -488,7 +489,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['updatePassword'])) {
                                     <label for="linkUpload">Feedback Link:</label>
                                     <div class="link-wrapper">
                                         <span id="staticLink" class="feedback-link">
-                                            https://quickrate.in/user-feedback/<?php echo urlencode($business_name); ?>
+                                        https://quickrate.agevole.in/user-feedback/<?php echo urlencode($username); ?>
                                         </span>
                                         <button type="button" class="copy-button" onclick="copyFeedbackLink()" id="copyButton">
                                             <i data-feather="copy"></i>
