@@ -504,6 +504,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['updatePassword'])) {
 
                 <!-- Social Icons Form -->
                 <div class="card">
+                    
                     <div class="card-body">
                         <h5 class="card-title mb-3">Social Icons</h5>
                         <form method="post" enctype="multipart/form-data">
