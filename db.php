@@ -1,6 +1,6 @@
 <?php 
 //db.php
-// Database configuration
+
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -13,4 +13,3 @@ if ($conn->connect_error) {
 }
 
 ?>
- //
