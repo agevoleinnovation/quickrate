@@ -1,0 +1,14 @@
+RewriteEngine On
+RewriteBase /quickrate/
+
+# Rewrite rule to hide the businessId in the URL
+RewriteRule ^details/([0-9]+)$ details.php?businessId=$1 [L]
+
+# Allow access to the uploads directory
+RewriteRule ^uploads/ - [L]
+
+# Your existing user-feedback rule
+RewriteRule ^user-feedback/([a-zA-Z0-9_-]+)$ user-feedback.php?username=$1 [L]
+
+# Rewrite rule to hide query parameters
+RewriteRule ^details/([0-9]+)$ details.php?businessId=$1 [L,QSA]
