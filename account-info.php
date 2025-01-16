@@ -488,7 +488,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['updatePassword'])) {
                                     <label for="linkUpload">Feedback Link:</label>
                                     <div class="link-wrapper">
                                         <span id="staticLink" class="feedback-link">
-                                            https://quickrate.in/user-feedback/<?php echo urlencode($business_name); ?>
+                                            https://quickrate.agevole.in/user-feedback/<?php echo urlencode($business_name); ?>
                                         </span>
                                         <button type="button" class="copy-button" onclick="copyFeedbackLink()" id="copyButton">
                                             <i data-feather="copy"></i>
@@ -504,7 +504,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['updatePassword'])) {
 
                 <!-- Social Icons Form -->
                 <div class="card">
-                    
                     <div class="card-body">
                         <h5 class="card-title mb-3">Social Icons</h5>
                         <form method="post" enctype="multipart/form-data">
